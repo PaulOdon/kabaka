@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "recipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "ingredients": {
+      "type": "string",
+      "required": true
+    },
+    "howTo": {
+      "type": "text",
+      "required": true
+    },
+    "preparationTime": {
+      "type": "float"
+    },
+    "imgUrls": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "preparation": {
+      "type": "blocks"
+    }
+  }
+}
